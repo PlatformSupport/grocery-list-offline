@@ -1,6 +1,11 @@
 (function () {
     var apiKey = "YOUR_API_KEY";
-    var el = new Everlive(apiKey);
+    var scheme = 'https';
+    
+    var el = new Everlive({
+        apiKey: apiKey,
+        scheme: scheme
+    });
 
     window.addView = kendo.observable({
         add: function () {
